@@ -12,6 +12,7 @@
     "build:backend": "npm run build --workspace=packages/backend",
     "build:shared": "npm run build --workspace=packages/shared",
     "build": "npm run build:shared && npm run build:backend && npm run build:frontend",
+    "postinstall": "npm run build:shared",
     "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",
     "format": "prettier --write \"packages/**/*.{ts,tsx,js,jsx,json,css,md}\""
