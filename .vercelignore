@@ -1,0 +1,10 @@
+# Don't upload these to Vercel
+node_modules
+.git
+.env.local
+.env.*.local
+coverage
+*.log
+
+# Keep dist folder - it's needed for deployment
+!dist
