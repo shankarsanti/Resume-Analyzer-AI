@@ -4,10 +4,6 @@
   "installCommand": "npm install --legacy-peer-deps",
   "devCommand": "npm run dev:frontend",
   "framework": null,
-  "env": {
-    "NODE_ENV": "production",
-    "VITE_API_URL": "@vite_api_url"
-  },
   "build": {
     "env": {
       "NODE_OPTIONS": "--max-old-space-size=4096"
