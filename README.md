@@ -8,25 +8,31 @@ This is a monorepo with a clean, organized structure:
 
 ```
 resume-analyzer/
-├── packages/
-│   ├── frontend/          # React + Vite + TypeScript frontend
-│   ├── backend/           # Node.js + Express + TypeScript API
-│   └── shared/            # Shared TypeScript types
-└── docs/                  # Project documentation
-    ├── README.md          # Documentation index
-    └── examples/          # Code examples
-        └── README.md
+├── frontend/              # React + Vite + TypeScript frontend
+│   ├── src/              # Frontend source code
+│   ├── dist/             # Production build output
+│   └── package.json      # Frontend dependencies
+├── backend/               # Node.js + Express + TypeScript API
+│   ├── src/              # Backend source code
+│   ├── dist/             # Compiled TypeScript output
+│   └── package.json      # Backend dependencies
+├── shared/                # Shared TypeScript types
+│   ├── src/              # Shared type definitions
+│   └── package.json      # Shared package config
+├── docs/                  # Project documentation
+│   ├── README.md         # Documentation index
+│   └── examples/         # Code examples
+├── .env                   # Root environment variables
+├── vercel.json           # Vercel deployment config
+└── package.json          # Workspace configuration
 ```
 
-### Packages
+### Workspace Structure
 
-- **packages/frontend**: React + Vite + TypeScript frontend application
-- **packages/backend**: Node.js + Express + TypeScript backend API
-- **packages/shared**: Shared TypeScript types and interfaces
-
-### Documentation
-
-See [docs/README.md](./docs/README.md) for code examples and usage guides.
+- **frontend/**: React + Vite + TypeScript frontend application
+- **backend/**: Node.js + Express + TypeScript backend API
+- **shared/**: Shared TypeScript types and interfaces
+- **docs/**: Project documentation and code examples
 
 ## Technology Stack
 

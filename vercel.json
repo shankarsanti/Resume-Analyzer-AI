@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm install --legacy-peer-deps && npm run build --workspace=packages/shared && npm run build --workspace=packages/frontend",
-  "outputDirectory": "packages/frontend/dist",
+  "buildCommand": "npm install --legacy-peer-deps && npm run build --workspace=frontend",
+  "outputDirectory": "frontend/dist",
   "installCommand": "npm install --legacy-peer-deps",
   "devCommand": "npm run dev:frontend",
   "framework": null,

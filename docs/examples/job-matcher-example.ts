@@ -87,8 +87,8 @@ const matchResult = matcher.match(resumeData, jobDescription);
 console.log('=== Job Match Analysis ===\n');
 console.log(`Match Percentage: ${matchResult.matchPercentage}%\n`);
 
-console.log(`Matching Skills (${matchResult.matchingSkills.length}):`);
-matchResult.matchingSkills.forEach(skill => {
+console.log(`Matching Skills (${matchResult.matchedSkills.length}):`);
+matchResult.matchedSkills.forEach(skill => {
   console.log(`  ✓ ${skill}`);
 });
 

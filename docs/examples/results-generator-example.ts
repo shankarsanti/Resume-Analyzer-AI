@@ -125,7 +125,7 @@ results.sectionsAnalysis.forEach(section => {
 
 if (results.jobMatch) {
   console.log(`\n🎯 Job Match: ${results.jobMatch.matchPercentage}%`);
-  console.log(`   Matching skills: ${results.jobMatch.matchingSkills.length}`);
+  console.log(`   Matching skills: ${results.jobMatch.matchedSkills.length}`);
   console.log(`   Missing skills: ${results.jobMatch.missingSkills.length}`);
   
   if (results.jobMatch.missingSkills.length > 0) {
