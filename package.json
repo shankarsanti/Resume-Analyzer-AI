@@ -8,8 +8,8 @@
   "scripts": {
     "dev:frontend": "npm run dev --workspace=packages/frontend",
     "dev:backend": "npm run dev --workspace=packages/backend",
-    "build:frontend": "npm run build:shared && npm run build --workspace=packages/frontend && npm run copy:dist",
-    "build:backend": "npm run build:shared && npm run build --workspace=packages/backend",
+    "build:frontend": "npm run build --workspace=packages/shared && npm run build --workspace=packages/frontend && npm run copy:dist",
+    "build:backend": "npm run build --workspace=packages/shared && npm run build --workspace=packages/backend",
     "build:shared": "npm run build --workspace=packages/shared",
     "build": "npm run build:shared && npm run build:backend && npm run build:frontend",
     "copy:dist": "cp -r packages/frontend/dist ./dist",
