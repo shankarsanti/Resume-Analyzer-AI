@@ -1,11 +1,11 @@
 [build]
-  # Base directory for the build
+  # Base directory for the build (root of monorepo)
   base = "/"
   
   # Build command - install all dependencies first, then build frontend
-  command = "npm install && npm run build:frontend"
+  command = "cd ../.. && npm install && npm run build:frontend"
   
-  # Directory with the static files to publish
+  # Directory with the static files to publish (relative to base)
   publish = "packages/frontend/dist"
 
 [build.environment]
