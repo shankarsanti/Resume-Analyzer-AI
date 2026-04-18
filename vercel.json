@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build --workspace=packages/shared && npm run build --workspace=packages/frontend",
+  "buildCommand": "npm run build --workspace=packages/frontend",
   "outputDirectory": "packages/frontend/dist",
   "installCommand": "npm install --legacy-peer-deps",
   "devCommand": "npm run dev:frontend",
