@@ -1,11 +1,12 @@
 {
-  "buildCommand": "npm run build --workspace=packages/frontend",
+  "buildCommand": "npm install --legacy-peer-deps && npm run build --workspace=packages/shared && npm run build --workspace=packages/frontend",
   "outputDirectory": "packages/frontend/dist",
   "installCommand": "npm install --legacy-peer-deps",
   "devCommand": "npm run dev:frontend",
   "framework": null,
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "VITE_API_URL": "@vite_api_url"
   },
   "build": {
     "env": {
