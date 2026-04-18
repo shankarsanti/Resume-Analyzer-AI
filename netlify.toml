@@ -1,0 +1,22 @@
+[build]
+  # Base directory for the build
+  base = "/"
+  
+  # Build command - install all dependencies first, then build frontend
+  command = "npm install && npm run build:frontend"
+  
+  # Directory with the static files to publish
+  publish = "packages/frontend/dist"
+
+[build.environment]
+  # Node version
+  NODE_VERSION = "18"
+  
+  # Environment variables for the build
+  NODE_ENV = "production"
+
+# Redirect all requests to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
