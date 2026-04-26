@@ -1,8 +1,8 @@
 {
   "name": "resume-analyzer-ai",
-  "buildCommand": "npm run build --workspace=shared && npm run build --workspace=frontend",
+  "buildCommand": "npm run build:frontend",
   "outputDirectory": "frontend/dist",
-  "installCommand": "npm install --legacy-peer-deps --workspaces",
+  "installCommand": "npm install --legacy-peer-deps",
   "devCommand": "npm run dev:frontend",
   "framework": null,
   "build": {
