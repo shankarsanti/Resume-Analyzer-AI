@@ -1,15 +1,7 @@
 {
-  "name": "resume-analyzer-ai",
   "buildCommand": "npm run build:shared && npm run build --workspace=frontend",
   "outputDirectory": "frontend/dist",
   "installCommand": "npm install --legacy-peer-deps",
-  "devCommand": "npm run dev:frontend",
-  "framework": null,
-  "build": {
-    "env": {
-      "NODE_OPTIONS": "--max-old-space-size=4096"
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
@@ -26,16 +18,5 @@
         }
       ]
     }
-  ],
-  "experimentalServices": {
-    "frontend": {
-      "entrypoint": "frontend",
-      "routePrefix": "/",
-      "framework": "vite"
-    },
-    "backend": {
-      "entrypoint": "backend",
-      "routePrefix": "/_/backend"
-    }
-  }
+  ]
 }
